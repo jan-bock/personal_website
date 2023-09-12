@@ -1,0 +1,19 @@
+.landing-page-container {
+  width: 75vw;
+  height: 100vh;
+  background-color: aliceblue;
+  margin: auto;
+  padding-top: 6rem;
+}
+
+.columns {
+  display: flex;
+  flex-direction: row;
+  column-gap: 2vw;
+  justify-content: center;
+}
+
+.lp-column {
+  width: 500px;
+  background-color: bisque;
+}
