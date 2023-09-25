@@ -25,3 +25,20 @@ const LandingPage = () => {
 };
 
 export default LandingPage;
+
+
+// return (
+//   <>
+//     <div className="landing-page-container">
+//       <div className="columns">
+//         {/* column 1 */}
+//         <BiographyColumn />
+//         {/* column 2 */}
+//         <SecondaryColumn />
+//       </div>
+//     </div>
+//   </>
+// );
+// };
+
+// export default LandingPage;
