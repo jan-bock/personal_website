@@ -1,24 +1,43 @@
-import { Button, Card, CardActions, CardContent, Typography } from "@mui/material";
+import {
+  Box,
+  Button,
+  Card,
+  CardActions,
+  CardContent,
+  Chip,
+  Typography,
+} from "@mui/material";
 
 const ExperienceCard = () => {
   return (
     <>
-      <Card sx={{ minWidth: 275, width: "400px" }}>
+      <Card sx={{ minWidth: 275, width: "550px" }}>
         <CardContent>
-          <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
-            Word of the Day
-          </Typography>
-          <Typography variant="h5" component="div">
-            {/* be{bull}nev{bull}o{bull}lent */}
-          </Typography>
-          <Typography sx={{ mb: 1.5 }} color="text.secondary">
-            adjective
-          </Typography>
-          <Typography variant="body2">
-            well meaning and kindly.
-            <br />
-            {'"a benevolent smile"'}
-          </Typography>
+          <Box
+            sx={{ display: "flex", flexDirection: "row", columnGap: "20px" }}
+          >
+            <Box sx={{ width: "200px", minWidth: "100px" }}>Date - Date</Box>
+            <Box>
+              <Typography sx={{ mb: 1.5 }} color="text.secondary">
+                Role TITLE | Company
+              </Typography>
+              <Typography sx={{ mb: 1.5 }} color="text.secondary">
+                Type of role
+              </Typography>
+              <Typography sx={{ mb: 1.5 }} color="text.secondary">
+                Lorem ipsum description lorem ipsum description lorem ipsum
+                description lorem ipsum description lorem ipsum description
+                lorem ipsum description lorem ipsum description lorem ipsum
+                description lorem ipsum description lorem ipsum description
+                lorem ipsum description
+              </Typography>
+
+              {/* Dynamic rendering of skills passed in */}
+              <Chip sx={{ marginRight: "5px" }} label="Skill 1" />
+              <Chip sx={{ marginRight: "5px" }} label="Skill 2" />
+              <Chip sx={{ marginRight: "5px" }} label="Skill 3" />
+            </Box>
+          </Box>
         </CardContent>
       </Card>{" "}
     </>
