@@ -1,7 +1,7 @@
 .landing-page-container {
-  width: 83vw;
+  width: 65vw;
   height: 100vh;
-  background-color: aliceblue;
+  /* background-color: aliceblue; */
   margin: auto;
   padding-top: 6rem;
   min-width: 720px;
@@ -16,8 +16,8 @@
 }
 
 .lp-column {
-  width: 500px;
-  background-color: bisque;
+  /* width: 500px; */
+  /* background-color: whitesmoke; */
 }
 
 #jan-bock {
@@ -25,13 +25,14 @@
   letter-spacing: -2px;
   font-size: 45px;
   margin-top: 0px;
+  z-index: 0;
 }
 
 #description {
   font-family: 'Inter';
   font-weight: 600;
-  letter-spacing: -0.5px;
-  font-size: 18px;
+  letter-spacing: -0.8px;
+  font-size: 20px;
   margin-top: -20px;
 }
 
@@ -46,6 +47,7 @@
 
 #bio-container {
   position: fixed;
+  width: max-content;
 }
 
 .secondary-column {
@@ -53,7 +55,8 @@
 }
 
 .bio {
-  width: 40vw;
+  width: 30vw;
+  z-index: 1;
 }
 
 @media (max-width:950px) {
@@ -67,12 +70,22 @@
   }
 
   .lp-column {
-    margin: auto;
+    margin: 0;
     margin-top: 10px;
+  }
 
+  .lp-column.bio.slogan-style {
+    width: 90vw;
+    margin: 0;
   }
 
   .secondary-column {
     padding: 0%;
   }
+
+  .landing-page-container {
+    width: 90vw;
+    padding-top: 4rem;
+  }
+
 }
