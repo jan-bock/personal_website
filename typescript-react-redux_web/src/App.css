@@ -1,7 +1,7 @@
 .landing-page-container {
-  width: 75vw;
+  width: 65vw;
   height: 100vh;
-  background-color: aliceblue;
+  /* background-color: aliceblue; */
   margin: auto;
   padding-top: 6rem;
   min-width: 720px;
@@ -9,23 +9,83 @@
 }
 
 .columns {
-  display: flex;
+  /* display: flex; */
   flex-direction: row;
   column-gap: 2vw;
   justify-content: center;
 }
 
 .lp-column {
-  width: 500px;
-  background-color: bisque;
+  /* width: 500px; */
+  /* background-color: whitesmoke; */
 }
 
-@media (max-width:1100px) {
+#jan-bock {
+  font-family: 'Inter';
+  letter-spacing: -2px;
+  font-size: 45px;
+  margin-top: 0px;
+  z-index: 0;
+}
+
+#description {
+  font-family: 'Inter';
+  font-weight: 600;
+  letter-spacing: -0.8px;
+  font-size: 20px;
+  margin-top: -20px;
+}
+
+.slogan-style {
+  font-family: 'Inter';
+  font-weight: 400;
+  letter-spacing: -0.2px;
+  font-size: 16px;
+  margin-top: -5px;
+  line-height: 25px;
+}
+
+#bio-container {
+  position: fixed;
+  width: max-content;
+}
+
+.secondary-column {
+  padding-left: 50%;
+}
+
+.bio {
+  width: 30vw;
+  z-index: 1;
+}
+
+@media (max-width:950px) {
   .columns {
+    display: flex;
     flex-direction: column;
   }
 
-  .lp-column {
-    margin: auto;
+  #bio-container {
+    position: relative;
   }
+
+  .lp-column {
+    margin: 0;
+    margin-top: 10px;
+  }
+
+  .lp-column.bio.slogan-style {
+    width: 90vw;
+    margin: 0;
+  }
+
+  .secondary-column {
+    padding: 0%;
+  }
+
+  .landing-page-container {
+    width: 90vw;
+    padding-top: 4rem;
+  }
+
 }
