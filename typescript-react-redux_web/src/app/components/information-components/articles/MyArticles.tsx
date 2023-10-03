@@ -20,7 +20,7 @@ const MyArticles = () => {
   };
 
   return (
-    <Box className="experience-container" sx={{ paddingBottom: "50px" }}>
+    <Box className="experience-container" id="ARTICLES" sx={{ paddingBottom: "50px" }}>
       {renderArticleCards(articles)}
     </Box>
   );

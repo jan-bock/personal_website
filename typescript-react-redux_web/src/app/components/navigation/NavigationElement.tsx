@@ -1,15 +1,22 @@
-import { Box } from "@mui/material";
+import { Box, Divider } from "@mui/material";
 
 interface NavigationProps {
-    name: string;
+  name: string;
 }
 
-const NavigationElement = (props: NavigationProps) => {
-    return (
-        <Box>
-            <li>{}</li>
-        </ Box>
-    )
-}
+const NavigationElement = ({ name }: NavigationProps) => {
+  const onNavClick = (name: string) => {
+    const scrollTo = "#" + name;
+    // @ts-ignore
+    window.location = scrollTo;
+  };
+
+  return (
+    <Box className="navigation-el" onClick={() => onNavClick(name)}>
+      <Box className="navigation-expanders"></Box>
+      <li className="navigation-li">{name}</li>
+    </Box>
+  );
+};
 
 export default NavigationElement;

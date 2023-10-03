@@ -1,4 +1,5 @@
 import ContactMethods from "./contact/ContactMethods";
+import NavigationContainer from "./navigation/NavigationContainer";
 
 const BiographyColumn = () => {
   return (
@@ -10,8 +11,7 @@ const BiographyColumn = () => {
           Creating seamless user experiences with <br></br>modern engineering
           techniques
         </h5>
-        {/* Navigation component in the form of a list with some animations */}
-        {/* Contact feature: Github, LinkedIn, Goodreads, Donation Genie */}
+        <NavigationContainer />
         <ContactMethods />
       </div>
     </>

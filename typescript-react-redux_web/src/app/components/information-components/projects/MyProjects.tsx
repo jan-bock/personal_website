@@ -21,7 +21,7 @@ const MyProjects = () => {
   };
 
   return (
-    <Box className="experience-container" sx={{ paddingBottom: "50px" }}>
+    <Box className="experience-container" id="PROJECTS" sx={{ paddingBottom: "50px" }}>
       {renderProjectCards(projects)}
     </Box>
   );
