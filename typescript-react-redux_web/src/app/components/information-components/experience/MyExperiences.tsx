@@ -1,5 +1,5 @@
 import ExperienceCard from "./ExperienceCard";
-import experiences from "../../json/experiences.json";
+import experiences from "../../../json/experiences.json";
 import { Box } from "@mui/material";
 
 export interface ExperienceCardFace {
@@ -24,7 +24,7 @@ const MyExperiences = () => {
   };
 
   return (
-    <Box sx={{ paddingBottom: "50px" }}>
+    <Box className="experience-container" sx={{ paddingBottom: "50px" }}>
       {renderExperienceCards(experiences)}
     </Box>
   );

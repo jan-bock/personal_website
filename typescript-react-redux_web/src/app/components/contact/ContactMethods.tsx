@@ -9,10 +9,12 @@ const ContactMethods = () => {
     switch (src) {
       //Redirects
       case "github":
-        window.location.assign("https://github.com/jan-bock");
+        window.open("https://github.com/jan-bock", "_blank") ||
+          window.location.assign("https://github.com/jan-bock");
         break;
       case "linkedin":
-        window.location.assign("https://www.linkedin.com/in/j-bock/");
+        window.open("https://www.linkedin.com/in/j-bock/", "_blank") ||
+          window.location.assign("https://www.linkedin.com/in/j-bock/");
         break;
       case "medium":
         // window.location.assign("");
