@@ -14,9 +14,7 @@ const LandingPage = () => {
     <>
       <div className="landing-page-container">
         <div className="columns">
-          {/* column 1 */}
           <BiographyColumn />
-          {/* column 2 */}
           <SecondaryColumn />
         </div>
       </div>
