@@ -11,8 +11,8 @@
         ]
     },
     {
-        "projectTitle": "RecruiterHub",
-        "description": "Frontend application for recruiters to quickly and easily digest a developer's GitHub contributions and person projects.",
+        "projectTitle": "RuitHub",
+        "description": "Frontend design & basic application for recruiters to quickly and easily digest a developer's GitHub contributions and person projects.",
         "link": "https://github.com/jan-bock/react-capstone/tree/github-initial/github-user-search-fullstack",
         "skills": [
             "Figma",

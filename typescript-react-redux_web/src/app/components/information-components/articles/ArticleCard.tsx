@@ -1,25 +1,13 @@
 import { Box, Card, CardContent, Chip, Typography } from "@mui/material";
 import OpenInNewIcon from "@mui/icons-material/OpenInNew";
 import { ArticleCardFace } from "./MyArticles";
+import Placeholder from "./article-images/placeholder.jpg"
 
 interface ArticleCardProps {
   cardInfo: ArticleCardFace;
 }
 
 const ArticleCard = ({ cardInfo }: ArticleCardProps) => {
-  const renderSkillChips = (skillsArray: string[]) => {
-    return skillsArray.map((entry) => {
-      return (
-        <>
-          <Chip
-            sx={{ marginRight: "5px", marginBottom: "5px" }}
-            key={entry}
-            label={entry}
-          />
-        </>
-      );
-    });
-  };
 
   return (
     <>
@@ -41,7 +29,7 @@ const ArticleCard = ({ cardInfo }: ArticleCardProps) => {
                 height: "75px",
                 backgroundColor: "lightgrey",
               }}
-            ></Box>
+            ><img id="image-container" src={Placeholder}/></Box>
             <Box>
               <Box sx={{ display: "flex", flexDirection: "row" }}>
                 <Typography

@@ -3,6 +3,7 @@ import Email from "./contact-icons/email.png";
 import Linkedin from "./contact-icons/linkedin.png";
 import Github from "./contact-icons/github.png";
 import Medium from "./contact-icons/medium.png";
+import Goodreads from "./contact-icons/goodreads.png";
 
 const ContactMethods = () => {
   const onIconClick = (src: string) => {
@@ -15,6 +16,10 @@ const ContactMethods = () => {
       case "linkedin":
         window.open("https://www.linkedin.com/in/j-bock/", "_blank") ||
           window.location.assign("https://www.linkedin.com/in/j-bock/");
+        break;
+      case "goodreads":
+        window.open("https://www.goodreads.com/user/show/131021907-jan-bock", "_blank") ||
+          window.location.assign("https://www.goodreads.com/user/show/131021907-jan-bock");
         break;
       case "medium":
         // window.location.assign("");
@@ -38,14 +43,14 @@ const ContactMethods = () => {
 
   return (
     <Box
-    className="contact-container"
+      className="contact-container"
       sx={{
         display: "flex",
         flexDirection: "row",
         columnGap: "10px",
         position: "absolute",
         bottom: "15%",
-        ":hover": {cursor: "pointer"}
+        ":hover": { cursor: "pointer" },
       }}
     >
       <img
@@ -72,6 +77,13 @@ const ContactMethods = () => {
         onClick={() => onIconClick("medium")}
         src={Medium}
         alt="medium icon"
+      ></img>
+      <img
+        className="contact-icons"
+        id="goodreads-icon"
+        onClick={() => onIconClick("goodreads")}
+        src={Goodreads}
+        alt="goodreads icon"
       ></img>
     </Box>
   );
