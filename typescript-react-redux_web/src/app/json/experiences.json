@@ -1,0 +1,83 @@
+[
+    {
+        "fromDate": "FEB 2023",
+        "toDate": "PRESENT",
+        "roleTitle": "Frontend Engineer",
+        "company": "Accenture (Global Automotive)",
+        "roleType": "Full Time",
+        "description": "lorem ipsum one line lorem ipsum one line lorem ipsum one line lorem ipsum one line, lorem ipsum one line lorem ipsum one line lorem ipsum one line lorem ipsum one linelorem ipsum one line lorem ipsum one line lorem ipsum one line lorem ipsum one line",
+        "skills": [
+            "React",
+            "TypeScript",
+            "MUI",
+            "Jenkins",
+            "Node.js",
+            "JSON"
+        ]
+    },
+    {
+        "fromDate": "JUNE 2022",
+        "toDate": "FEB 2023",
+        "roleTitle": "Full Stack Engineer",
+        "company": "Accenture (Big Government)",
+        "roleType": "Full Time",
+        "description": "lorem ipsum one line lorem ipsum one line lorem ipsum one line lorem ipsum one line",
+        "skills": [
+            "GDS",
+            "JavaScript",
+            "Nunjucks",
+            "UI/UX",
+            "Node.js",
+            "Java",
+            "Sprint(Boot)"
+        ]
+    },
+    {
+        "fromDate": "FEB 2022",
+        "toDate": "MAY 2022",
+        "roleTitle": "Full Stack Graduate",
+        "company": "Accenture (Internal)",
+        "roleType": "Bootcamp Graduate",
+        "description": "lorem ipsum one line lorem ipsum one line lorem ipsum one line lorem ipsum one line",
+        "skills": [
+            "JavaScript",
+            "HTML/CSS",
+            "Node.js",
+            "Express.js",
+            "UI/UX",
+            "Bootstrap",
+            "AWS"
+        ]
+    },
+    {
+        "fromDate": "SEPT 2021",
+        "toDate": "JAN 2022",
+        "roleTitle": "Product Manager",
+        "company": "Collate (Early Stage Startup)",
+        "roleType": "Internship",
+        "description": "lorem ipsum one line lorem ipsum one line lorem ipsum one line lorem ipsum one line",
+        "skills": [
+            "Product Sense",
+            "API Integration",
+            "Startup Operations",
+            "Project/Product Management"
+        ]
+    },
+    {
+        "fromDate": "2018",
+        "toDate": "2021",
+        "roleTitle": "Physical Geography B.Sc",
+        "company": "Durham University",
+        "roleType": "Student",
+        "description": "lorem ipsum one line lorem ipsum one line lorem ipsum one line lorem ipsum one line",
+        "skills": [
+            "R",
+            "Statistical Programming",
+            "Python",
+            "ML",
+            "GIS",
+            "Information Systems",
+            "Big Data"
+        ]
+    }
+]

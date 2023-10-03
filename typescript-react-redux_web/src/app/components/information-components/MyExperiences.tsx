@@ -1,13 +1,33 @@
 import ExperienceCard from "./ExperienceCard";
+import experiences from "../../json/experiences.json";
+import { Box } from "@mui/material";
+
+export interface ExperienceCardFace {
+  fromDate: string;
+  toDate: string;
+  roleTitle: string;
+  company: string;
+  roleType: string;
+  description: string;
+  skills: string[];
+}
 
 const MyExperiences = () => {
-    return (
+  const renderExperienceCards = (experiences: ExperienceCardFace[]) => {
+    return experiences.map((log) => {
+      return (
         <>
-        {/* data in json will be used to render all of my experience cards based on the ExperienceCard tempalte */}
-        <ExperienceCard />
+          <ExperienceCard cardInfo={log} />
         </>
-    );
+      );
+    });
   };
-  
-  export default MyExperiences;
-  
+
+  return (
+    <Box sx={{ paddingBottom: "50px" }}>
+      {renderExperienceCards(experiences)}
+    </Box>
+  );
+};
+
+export default MyExperiences;

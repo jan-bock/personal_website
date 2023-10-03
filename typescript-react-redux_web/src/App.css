@@ -11,7 +11,7 @@
 .columns {
   /* display: flex; */
   flex-direction: row;
-  column-gap: 2vw;
+  column-gap: 1.5vw;
   justify-content: center;
 }
 
@@ -55,11 +55,43 @@
 }
 
 .bio {
-  width: 30vw;
+  width: 33vw;
   z-index: 1;
 }
 
-@media (max-width:950px) {
+.experience-card {
+  min-width: 275px;
+  width: 32vw;
+  margin-bottom: 20px;
+  border: none;
+  box-shadow: none !important;
+}
+
+.experience-card:hover {
+  background-color: rgba(128, 128, 128, 0.033);
+}
+
+.experience-card:hover .experience-card-role {
+  font-weight: 700;
+}
+
+.lp-column.bio.slogan-style {
+  width: 32vw;
+}
+
+@media (max-width:1350px) {
+
+  .experience-card {
+    width: 45vw;
+  }
+
+  .lp-column.bio.slogan-style {
+    width: 45vw;
+    margin: 0;
+  }
+}
+
+@media (max-width:1000px) {
   .columns {
     display: flex;
     flex-direction: column;
@@ -88,4 +120,7 @@
     padding-top: 4rem;
   }
 
+  .experience-card {
+    width: 90vw;
+  }
 }
