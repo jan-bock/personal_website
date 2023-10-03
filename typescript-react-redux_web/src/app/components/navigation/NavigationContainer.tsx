@@ -1,16 +1,14 @@
+import NavigationElement from "./NavigationElement";
 
-const BiographyColumn = () => {
+const NavigationContainer = () => {
     return (
-        <div className="lp-column">
-            <h1 id="jan-bock">Jan Bock</h1>
-            <h3 id="description">Frontend Developer @ Accenture</h3>
-            <h5>Short Intro Here ...</h5>
-
-            {/* Navigation component in the form of a list with some animations */}
-            {/* Contact feature: Github, LinkedIn, Goodreads, Donation Genie */}
-
+        <div>
+          <NavigationElement name="ABOUT"/>
+          <NavigationElement name="EXPERIENCES" />
+          <NavigationElement name="PROJECTS" />
+          <NavigationElement name="ARTICLES" />
         </div>
     )
 }
 
-export default BiographyColumn;
+export default NavigationContainer;

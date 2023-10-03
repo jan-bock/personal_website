@@ -1,0 +1,22 @@
+[
+    {
+        "projectTitle": "Donation Genie",
+        "description": "Multi tier full stack application designed and developed as part of Accenture's Tech4Good team; to revolutionise, modernise, and digitalise the foodbank donation process! Nominated for awards, and featured in the BBC and Post Office Website.",
+        "link": "https://donation-genie.com/",
+        "skills": [
+            "Greenfield Development",
+            "Lead Frontend Developer",
+            "Tech4Good",
+            "AWS"
+        ]
+    },
+    {
+        "projectTitle": "RuitHub",
+        "description": "Frontend design & basic application for recruiters to quickly and easily digest a developer's GitHub contributions and person projects.",
+        "link": "https://github.com/jan-bock/react-capstone/tree/github-initial/github-user-search-fullstack",
+        "skills": [
+            "Figma",
+            "Custom Components"
+        ]
+    }
+]

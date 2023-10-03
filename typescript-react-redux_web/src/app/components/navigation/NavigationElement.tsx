@@ -1,16 +1,22 @@
+import { Box, Divider } from "@mui/material";
 
-const BiographyColumn = () => {
-    return (
-        <div className="lp-column">
-            <h1>Jan Bock</h1>
-            <h3>Frontend Developer @ Accenture</h3>
-            <h5>Short Intro Here ...</h5>
-
-            {/* Navigation component in the form of a list with some animations */}
-            {/* Contact feature: Github, LinkedIn, Goodreads, Donation Genie */}
-
-        </div>
-    )
+interface NavigationProps {
+  name: string;
 }
 
-export default BiographyColumn;
+const NavigationElement = ({ name }: NavigationProps) => {
+  const onNavClick = (name: string) => {
+    const scrollTo = "#" + name;
+    // @ts-ignore
+    window.location = scrollTo;
+  };
+
+  return (
+    <Box className="navigation-el" onClick={() => onNavClick(name)}>
+      <Box className="navigation-expanders"></Box>
+      <li className="navigation-li">{name}</li>
+    </Box>
+  );
+};
+
+export default NavigationElement;

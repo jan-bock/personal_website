@@ -1,23 +1,23 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .landing-page-container {
   width: 65vw;
   height: 100vh;
-  /* background-color: aliceblue; */
   margin: auto;
   padding-top: 6rem;
   min-width: 720px;
-  /* background-color: rgb(15 23 42/var(--tw-bg-opacity)); */
+}
+
+#ABOUT {
+  padding-top: 10px;
 }
 
 .columns {
-  /* display: flex; */
   flex-direction: row;
   column-gap: 1.5vw;
   justify-content: center;
-}
-
-.lp-column {
-  /* width: 500px; */
-  /* background-color: whitesmoke; */
 }
 
 #jan-bock {
@@ -45,6 +45,10 @@
   line-height: 25px;
 }
 
+#opaque {
+  opacity: 0.6;
+}
+
 #bio-container {
   position: fixed;
   width: max-content;
@@ -62,27 +66,100 @@
 
 .experience-card {
   min-width: 275px;
-  width: 32vw;
+  width: 40vw;
   margin-bottom: 15px;
   border: none;
   box-shadow: none !important;
 }
 
 .experience-card:hover {
+  transition: 0.3s;
   background-color: rgba(128, 128, 128, 0.033);
+  cursor: pointer;
 }
 
 .experience-card:hover .experience-card-role {
+  transition: 0.3s;
   font-weight: 700;
 }
 
+.experience-container:hover .experience-card {
+  transition: 0.3s;
+  opacity: 0.5;
+  filter: blur(0.5px);
+}
+
+.experience-container .experience-card:hover {
+  transition: 0.3s;
+  opacity: 1;
+  filter: blur(0px);
+
+}
+
 .lp-column.bio.slogan-style {
-  width: 32vw;
+  width: 38vw;
 }
 
 .contact-icons {
   width: 30px;
   height: 30px;
+}
+
+.column-end-info {
+  font-family: 'Inter';
+  font-weight: 400;
+  letter-spacing: -0.2px;
+  font-size: 14px;
+  line-height: 25px;
+  padding-bottom: 55px;
+  padding-left: 25px;
+}
+
+.brittany {
+  color: black;
+}
+
+.navigation-el {
+  display: flex;
+  flex-direction: row;
+  padding-top: 10px;
+}
+
+.navigation-expanders {
+  background-color: black;
+  margin-top: 10px;
+  width: 20px;
+  height: 1px;
+  opacity: 0.7;
+}
+
+.navigation-el:hover .navigation-expanders {
+  transition: width 0.5s ease-out;
+  width: 75px;
+  height: 1.2px;
+}
+
+.navigation-li {
+  list-style: none;
+  padding-left: 20px;
+  font-family: 'Inter';
+  font-weight: 600;
+  letter-spacing: -0.2px;
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+#goodreads-icon {
+  width: 22px;
+  height: 22px;
+  margin-top: 4px;
+}
+
+#image-container {
+  width: 125px;
+  height: 75px;
+  border-radius: 4px;
+
 }
 
 @media (max-width:1350px) {
@@ -104,6 +181,8 @@
 
   #bio-container {
     position: relative;
+    height: 40vw;
+    min-height: 390px;
   }
 
   .lp-column {

@@ -1,5 +1,6 @@
 import { Box, Card, CardContent, Chip, Typography } from "@mui/material";
 import { ExperienceCardFace } from "./MyExperiences";
+import OpenInNewIcon from "@mui/icons-material/OpenInNew";
 
 interface ExperienceCardProps {
   cardInfo: ExperienceCardFace;
@@ -22,13 +23,19 @@ const ExperienceCard = ({ cardInfo }: ExperienceCardProps) => {
 
   const onExperienceClick = (cardInfo: ExperienceCardFace) => {
     if (cardInfo.company.includes("Accenture"))
-      window.location.assign(
-        "https://www.accenture.com/gb-en/services/technology/application-services"
-      );
+      window.open(
+        "https://www.accenture.com/gb-en/services/technology/application-services",
+        "_blank"
+      ) ||
+        window.location.assign(
+          "https://www.accenture.com/gb-en/services/technology/application-services"
+        );
     else if (cardInfo.company.includes("Collate"))
-      window.location.assign("https://www.collate.org/");
+      window.open("https://www.collate.org/", "_blank") ||
+        window.location.assign("https://www.collate.org/");
     else if (cardInfo.company.includes("Durham"))
-      window.location.assign("https://www.durham.ac.uk/");
+      window.open("https://www.durham.ac.uk/", "_blank") ||
+        window.location.assign("https://www.durham.ac.uk/");
   };
 
   return (
@@ -39,7 +46,7 @@ const ExperienceCard = ({ cardInfo }: ExperienceCardProps) => {
         onClick={() => onExperienceClick(cardInfo)}
       >
         <CardContent>
-          <Box sx={{ display: "flex", flexDirection: "row", columnGap: "5px" }}>
+          <Box sx={{ display: "flex", flexDirection: "row" }}>
             <Box
               sx={{
                 width: "200px",
@@ -55,19 +62,24 @@ const ExperienceCard = ({ cardInfo }: ExperienceCardProps) => {
               {cardInfo.fromDate} - {cardInfo.toDate}
             </Box>
             <Box>
-              <Typography
-                sx={{
-                  mb: 1.5,
-                  fontFamily: "Inter",
-                  fontWeight: 600,
-                  letterSpacing: "-0.5px",
-                }}
-                className="experience-card-role"
-                key={cardInfo.roleTitle + "-" + cardInfo.company}
-              >
-                <div>{cardInfo.roleTitle}</div>
-                <div>{cardInfo.company}</div>
-              </Typography>
+              <Box sx={{ display: "flex", flexDirection: "row" }}>
+                <Typography
+                  sx={{
+                    mb: 1.5,
+                    fontFamily: "Inter",
+                    fontWeight: 600,
+                    letterSpacing: "-0.5px",
+                  }}
+                  className="experience-card-role"
+                  key={cardInfo.roleTitle + "-" + cardInfo.company}
+                >
+                  <div>{cardInfo.roleTitle}</div>
+                  <div>{cardInfo.company}</div>
+                </Typography>
+                <Box>
+                  <OpenInNewIcon sx={{paddingLeft: "5px", width: "15px"}}/>
+                </Box>
+              </Box>
               <Typography
                 sx={{ mb: 1.5, marginTop: "-10px" }}
                 color="text.secondary"
@@ -80,12 +92,11 @@ const ExperienceCard = ({ cardInfo }: ExperienceCardProps) => {
               >
                 {cardInfo.description}
               </Typography>
-              {/* Dynamic rendering of skills passed in */}
               {renderSkillChips(cardInfo.skills)}
             </Box>
           </Box>
         </CardContent>
-      </Card>{" "}
+      </Card>
     </>
   );
 };

@@ -1,6 +1,6 @@
 const MyBackground = () => {
   return (
-    <div className="lp-column bio slogan-style">
+    <div className="lp-column bio slogan-style" id="ABOUT">
       While studying a B.Sc at Durham University, I discovered an enjoyment for
       technical tasks and problem solving. From using GIS, statistical
       programming methods(R; Python; Stata), and image classification in Remote
