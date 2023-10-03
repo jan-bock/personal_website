@@ -1,4 +1,4 @@
-import { Box, Icon } from "@mui/material";
+import { Box } from "@mui/material";
 import Email from "./contact-icons/email.png";
 import Linkedin from "./contact-icons/linkedin.png";
 import Github from "./contact-icons/github.png";
@@ -38,12 +38,14 @@ const ContactMethods = () => {
 
   return (
     <Box
+    className="contact-container"
       sx={{
         display: "flex",
         flexDirection: "row",
         columnGap: "10px",
         position: "absolute",
         bottom: "15%",
+        ":hover": {cursor: "pointer"}
       }}
     >
       <img
@@ -51,21 +53,25 @@ const ContactMethods = () => {
         onClick={() => onIconClick("github")}
         id="github"
         src={Github}
+        alt="github icon"
       ></img>
       <img
         className="contact-icons"
         onClick={() => onIconClick("linkedin")}
         src={Linkedin}
+        alt="linkedin icon"
       ></img>
       <img
         className="contact-icons"
         onClick={() => onIconClick("email")}
         src={Email}
+        alt="email icon"
       ></img>
       <img
         className="contact-icons"
         onClick={() => onIconClick("medium")}
         src={Medium}
+        alt="medium icon"
       ></img>
     </Box>
   );

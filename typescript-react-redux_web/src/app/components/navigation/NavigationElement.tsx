@@ -1,16 +1,15 @@
+import { Box } from "@mui/material";
 
-const BiographyColumn = () => {
+interface NavigationProps {
+    name: string;
+}
+
+const NavigationElement = (props: NavigationProps) => {
     return (
-        <div className="lp-column">
-            <h1>Jan Bock</h1>
-            <h3>Frontend Developer @ Accenture</h3>
-            <h5>Short Intro Here ...</h5>
-
-            {/* Navigation component in the form of a list with some animations */}
-            {/* Contact feature: Github, LinkedIn, Goodreads, Donation Genie */}
-
-        </div>
+        <Box>
+            <li>{}</li>
+        </ Box>
     )
 }
 
-export default BiographyColumn;
+export default NavigationElement;

@@ -1,23 +1,37 @@
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  background-color: #f1f1f1;
+}
+
+/* The progress container (grey background) */
+.progress-container {
+  width: 100%;
+  height: 8px;
+  background: #ccc;
+}
+
+/* The progress bar (scroll indicator) */
+.progress-bar {
+  height: 8px;
+  background: #04AA6D;
+  width: 0%;
+}
+
 .landing-page-container {
   width: 65vw;
   height: 100vh;
-  /* background-color: aliceblue; */
   margin: auto;
   padding-top: 6rem;
   min-width: 720px;
-  /* background-color: rgb(15 23 42/var(--tw-bg-opacity)); */
 }
 
 .columns {
-  /* display: flex; */
   flex-direction: row;
   column-gap: 1.5vw;
   justify-content: center;
-}
-
-.lp-column {
-  /* width: 500px; */
-  /* background-color: whitesmoke; */
 }
 
 #jan-bock {
@@ -43,6 +57,11 @@
   font-size: 16px;
   margin-top: -5px;
   line-height: 25px;
+}
+
+#opaque {
+  opacity: 0.6;
+
 }
 
 #bio-container {
@@ -101,6 +120,20 @@
   height: 30px;
 }
 
+.column-end-info {
+  font-family: 'Inter';
+  font-weight: 400;
+  letter-spacing: -0.2px;
+  font-size: 14px;
+  line-height: 25px;
+  padding-bottom: 55px;
+  padding-left: 25px;
+}
+
+.brittany {
+  color: black;
+}
+
 @media (max-width:1350px) {
   .experience-card {
     width: 45vw;
@@ -120,6 +153,8 @@
 
   #bio-container {
     position: relative;
+    height: 30vw;
+    min-height: 250px;
   }
 
   .lp-column {
