@@ -12,6 +12,7 @@ const ExperienceCard = ({ cardInfo }: ExperienceCardProps) => {
         <>
           <Chip
             sx={{ marginRight: "5px", marginBottom: "5px" }}
+            key={entry}
             label={entry}
           />
         </>
@@ -19,13 +20,26 @@ const ExperienceCard = ({ cardInfo }: ExperienceCardProps) => {
     });
   };
 
+  const onExperienceClick = (cardInfo: ExperienceCardFace) => {
+    if (cardInfo.company.includes("Accenture"))
+      window.location.assign(
+        "https://www.accenture.com/gb-en/services/technology/application-services"
+      );
+    else if (cardInfo.company.includes("Collate"))
+      window.location.assign("https://www.collate.org/");
+    else if (cardInfo.company.includes("Durham"))
+      window.location.assign("https://www.durham.ac.uk/");
+  };
+
   return (
     <>
-      <Card className="experience-card">
+      <Card
+        className="experience-card"
+        key={cardInfo.fromDate + "-" + cardInfo.toDate}
+        onClick={() => onExperienceClick(cardInfo)}
+      >
         <CardContent>
-          <Box
-            sx={{ display: "flex", flexDirection: "row", columnGap: "5px"}}
-          >
+          <Box sx={{ display: "flex", flexDirection: "row", columnGap: "5px" }}>
             <Box
               sx={{
                 width: "200px",
@@ -36,6 +50,7 @@ const ExperienceCard = ({ cardInfo }: ExperienceCardProps) => {
                 paddingTop: "4px",
               }}
               color="text.secondary"
+              key={cardInfo.fromDate + "-" + cardInfo.toDate}
             >
               {cardInfo.fromDate} - {cardInfo.toDate}
             </Box>
@@ -48,14 +63,21 @@ const ExperienceCard = ({ cardInfo }: ExperienceCardProps) => {
                   letterSpacing: "-0.5px",
                 }}
                 className="experience-card-role"
+                key={cardInfo.roleTitle + "-" + cardInfo.company}
               >
                 <div>{cardInfo.roleTitle}</div>
                 <div>{cardInfo.company}</div>
               </Typography>
-              <Typography sx={{ mb: 1.5, marginTop: "-10px"}} color="text.secondary">
+              <Typography
+                sx={{ mb: 1.5, marginTop: "-10px" }}
+                color="text.secondary"
+              >
                 {cardInfo.roleType}
               </Typography>
-              <Typography sx={{ mb: 1.5, fontSize: "14px"}} color="text.secondary">
+              <Typography
+                sx={{ mb: 1.5, fontSize: "14px" }}
+                color="text.secondary"
+              >
                 {cardInfo.description}
               </Typography>
               {/* Dynamic rendering of skills passed in */}
