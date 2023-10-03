@@ -17,7 +17,7 @@ const MyExperiences = () => {
     return experiences.map((log) => {
       return (
         <>
-          <ExperienceCard cardInfo={log} />
+          <ExperienceCard key={log.roleTitle} cardInfo={log} />
         </>
       );
     });

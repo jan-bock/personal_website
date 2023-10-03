@@ -48,6 +48,7 @@
 #bio-container {
   position: fixed;
   width: max-content;
+  height: 100vh;
 }
 
 .secondary-column {
@@ -62,7 +63,7 @@
 .experience-card {
   min-width: 275px;
   width: 32vw;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   border: none;
   box-shadow: none !important;
 }
@@ -79,8 +80,12 @@
   width: 32vw;
 }
 
-@media (max-width:1350px) {
+.contact-icons {
+  width: 30px;
+  height: 30px;
+}
 
+@media (max-width:1350px) {
   .experience-card {
     width: 45vw;
   }
