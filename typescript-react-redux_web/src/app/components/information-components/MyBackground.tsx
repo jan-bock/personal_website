@@ -3,7 +3,7 @@ const MyBackground = () => {
     <div className="lp-column bio slogan-style" id="ABOUT">
       While studying a B.Sc at Durham University, I discovered an enjoyment for
       technical tasks and problem solving. From using GIS, statistical
-      programming methods(R; Python; Stata), and image classification in Remote
+      programming methods (R; Python; Stata), and image classification in Remote
       Sensing, <b>I dove head first into the world of software development </b>
       with step 1 after uni... Googling how to become a frontend developer.
       <br></br>

@@ -208,3 +208,61 @@ html {
     width: 90vw;
   }
 }
+
+@media (max-width:800px) {
+
+  .landing-page-container {
+    width: 65vw;
+    height: 100vh;
+    margin: auto;
+    padding-top: 6rem;
+    min-width: 300px;
+  }
+
+  .columns {
+    display: flex;
+    flex-direction: column;
+    padding-left: 25px;
+  }
+
+  #bio-container {
+    position: relative;
+    height: 40vw;
+    min-height: 390px;
+  }
+
+  .lp-column {
+    margin: 0;
+    margin-top: 10px;
+  }
+
+  .lp-column.bio.slogan-style {
+    width: 90vw;
+    margin: 0;
+  }
+
+  .landing-page-container {
+    width: 90vw;
+    padding-top: 4rem;
+  }
+
+  .experience-card {
+    width: 90vw;
+  }
+
+  .column-end-info {
+    font-family: 'Inter';
+    width: 90vw;
+    font-weight: 400;
+    letter-spacing: -0.2px;
+    font-size: 14px;
+    line-height: 25px;
+    padding-bottom: 55px;
+    padding-left: 25px;
+  }
+
+  .lp-column.secondary-column {
+    padding: 0%;
+    width: 100vw;
+  }
+}
