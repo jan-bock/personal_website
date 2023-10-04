@@ -13,12 +13,12 @@ const SecondaryColumn = () => {
       <Box sx={{ marginTop: "35px" }} />
       <MyProjects />
       <Box sx={{ marginTop: "35px" }} />
-      <MyArticles />
-      <Box sx={{ marginTop: "35px" }} />
+      {/* <MyArticles /> */}
+      {/* <Box sx={{ marginTop: "35px" }} /> */}
       <p className="column-end-info">
         <b>Original design by <a className="brittany" href="https://brittanychiang.com/">Brittany Chiang</a>; all code is mine</b>. Developed
         in Visual Studio Code; primarily built in React and Typescript. Tooling
-        includes Material UI.
+        includes Material UI; deployed using Vercel.
       </p>
     </div>
   );

@@ -17,7 +17,7 @@ const MyBackground = () => {
       <br></br>
       <br></br>
       When I'm not coding, I'm either with friends, travelling, at the gym, or
-      trying to strengthen my languages!
+      strengthening my languages!
     </div>
   );
 };
