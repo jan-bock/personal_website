@@ -41,14 +41,15 @@ const ProjectCard = ({ cardInfo }: ExperienceCardProps) => {
       >
         <CardContent>
           <Box
-            sx={{ display: "flex", flexDirection: "row", columnGap: "25px" }}
+            sx={{ display: "flex", flexDirection: "row", columnGap: "25px", '@media screen and (max-width: 400px)': {columnGap: "20px"}}}
           >
             <Box
               sx={{
                 borderRadius: "2px",
                 minWidth: "125px",
                 height: "75px",
-                backgroundColor: "lightgrey",
+                '@media screen and (max-width: 400px)': {minWidth: "100px",
+              }
               }}
             >
               {returnImg()}

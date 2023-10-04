@@ -93,7 +93,6 @@ html {
   transition: 0.3s;
   opacity: 1;
   filter: blur(0px);
-
 }
 
 .lp-column.bio.slogan-style {
@@ -160,7 +159,6 @@ html {
   width: 125px;
   height: 75px;
   border-radius: 4px;
-
 }
 
 @media (max-width:1350px) {
@@ -217,7 +215,7 @@ html {
     font-size: 14px;
     line-height: 25px;
     padding-bottom: 55px;
-    padding-left: 0; 
+    padding-left: 0;
     margin: auto;
   }
 }
@@ -266,7 +264,7 @@ html {
     font-size: 14px;
     line-height: 25px;
     padding-bottom: 55px;
-    padding-left: 10px; 
+    padding-left: 10px;
     margin: auto;
   }
 
@@ -288,5 +286,12 @@ html {
     width: 90vw;
     font-size: 14px;
     margin: 0;
+  }
+}
+
+@media (max-width:400px) {
+  #image-container {
+    width: 100px;
+    height: auto;
   }
 }
