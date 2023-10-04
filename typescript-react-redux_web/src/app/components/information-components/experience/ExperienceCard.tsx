@@ -46,7 +46,16 @@ const ExperienceCard = ({ cardInfo }: ExperienceCardProps) => {
         onClick={() => onExperienceClick(cardInfo)}
       >
         <CardContent>
-          <Box sx={{ display: "flex", flexDirection: "row" }}>
+          <Box
+            sx={{
+              display: "flex",
+              flexDirection: "row",
+              "@media screen and (max-width: 1000px)": {
+                flexDirection: "column",
+                rowGap: "20px",
+              },
+            }}
+          >
             <Box
               sx={{
                 width: "200px",
@@ -55,6 +64,8 @@ const ExperienceCard = ({ cardInfo }: ExperienceCardProps) => {
                 fontWeight: 600,
                 fontSize: "12px",
                 paddingTop: "4px",
+                '@media screen and (max-width: 1000px)': {display: "flex", alignSelf: "flex-end", width: "max-content", minWidth: "0",
+              }
               }}
               color="text.secondary"
               key={cardInfo.fromDate + "-" + cardInfo.toDate}
@@ -77,7 +88,7 @@ const ExperienceCard = ({ cardInfo }: ExperienceCardProps) => {
                   <div>{cardInfo.company}</div>
                 </Typography>
                 <Box>
-                  <OpenInNewIcon sx={{paddingLeft: "5px", width: "15px"}}/>
+                  <OpenInNewIcon sx={{ paddingLeft: "5px", width: "15px" }} />
                 </Box>
               </Box>
               <Typography
