@@ -112,7 +112,8 @@ html {
   font-size: 14px;
   line-height: 25px;
   padding-bottom: 55px;
-  padding-left: 25px;
+  margin: auto;
+  width: 42vw;
 }
 
 .brittany {
@@ -207,6 +208,18 @@ html {
   .experience-card {
     width: 90vw;
   }
+
+  .column-end-info {
+    font-family: 'Inter';
+    width: 90vw;
+    font-weight: 400;
+    letter-spacing: -0.2px;
+    font-size: 14px;
+    line-height: 25px;
+    padding-bottom: 55px;
+    padding-left: 0; 
+    margin: auto;
+  }
 }
 
 @media (max-width:800px) {
@@ -222,7 +235,7 @@ html {
   .columns {
     display: flex;
     flex-direction: column;
-    padding-left: 25px;
+    padding-left: 10px;
   }
 
   #bio-container {
@@ -258,11 +271,12 @@ html {
     font-size: 14px;
     line-height: 25px;
     padding-bottom: 55px;
-    padding-left: 25px;
+    padding-left: 0; 
+    margin: auto;
   }
 
   .lp-column.secondary-column {
     padding: 0%;
-    width: 100vw;
+    /* width: 100vw; */
   }
 }
