@@ -232,12 +232,6 @@ html {
     min-width: 250px;
   }
 
-  .columns {
-    display: flex;
-    flex-direction: column;
-    padding-left: 10px;
-  }
-
   #bio-container {
     position: relative;
     height: 40vw;
@@ -251,6 +245,7 @@ html {
 
   .lp-column.bio.slogan-style {
     width: 90vw;
+    font-size: 14.5px;
     margin: 0;
   }
 
@@ -271,12 +266,27 @@ html {
     font-size: 14px;
     line-height: 25px;
     padding-bottom: 55px;
-    padding-left: 0; 
+    padding-left: 10px; 
     margin: auto;
   }
 
   .lp-column.secondary-column {
     padding: 0%;
+    margin: auto;
     /* width: 100vw; */
+  }
+}
+
+@media (max-width:300px) {
+  .lp-column.secondary-column {
+    padding: 0%;
+    margin: auto;
+    width: 90vw;
+  }
+
+  .lp-column.bio.slogan-style {
+    width: 90vw;
+    font-size: 14px;
+    margin: 0;
   }
 }
