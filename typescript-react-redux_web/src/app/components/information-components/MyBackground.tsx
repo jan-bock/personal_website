@@ -1,3 +1,5 @@
+import { Box } from "@mui/material";
+
 const MyBackground = () => {
   return (
     <div className="lp-column bio slogan-style" id="ABOUT">

@@ -1,4 +1,4 @@
-import { Box, Card, CardContent, Chip, Typography } from "@mui/material";
+import { Box, Card, CardContent, Typography } from "@mui/material";
 import OpenInNewIcon from "@mui/icons-material/OpenInNew";
 import { ArticleCardFace } from "./MyArticles";
 import Placeholder from "./article-images/placeholder.jpg"

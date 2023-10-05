@@ -6,7 +6,7 @@ const NavigationContainer = () => {
           <NavigationElement name="ABOUT"/>
           <NavigationElement name="EXPERIENCES" />
           <NavigationElement name="PROJECTS" />
-          <NavigationElement name="ARTICLES" />
+          {/* <NavigationElement name="ARTICLES" /> */}
         </div>
     )
 }

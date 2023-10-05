@@ -14,6 +14,12 @@ html {
   padding-top: 10px;
 }
 
+#accenture {
+  margin-top: -19px;
+  width: 20px;
+  height: 25px;
+}
+
 .columns {
   flex-direction: row;
   column-gap: 1.5vw;

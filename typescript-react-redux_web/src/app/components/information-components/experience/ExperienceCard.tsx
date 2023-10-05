@@ -12,7 +12,7 @@ const ExperienceCard = ({ cardInfo }: ExperienceCardProps) => {
       return (
         <>
           <Chip
-            sx={{ marginRight: "5px", marginBottom: "5px" }}
+            sx={{ marginRight: "5px", marginBottom: "5px", ":hover": {backgroundColor: "black", color: "white", transitionDuration: "0.5s"} }}
             key={entry}
             label={entry}
           />
