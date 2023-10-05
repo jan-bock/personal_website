@@ -72,12 +72,12 @@ const ContactMethods = () => {
         src={Email}
         alt="email icon"
       ></img>
-      <img
+      {/* <img
         className="contact-icons"
         onClick={() => onIconClick("medium")}
         src={Medium}
         alt="medium icon"
-      ></img>
+      ></img> */}
       <img
         className="contact-icons"
         id="goodreads-icon"

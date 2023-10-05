@@ -87,6 +87,7 @@ html {
 .experience-card:hover .experience-card-role {
   transition: 0.3s;
   font-weight: 700;
+  color: #9000e3;
 }
 
 .experience-container:hover .experience-card {
