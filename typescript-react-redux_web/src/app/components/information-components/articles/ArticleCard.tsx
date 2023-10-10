@@ -1,14 +1,13 @@
 import { Box, Card, CardContent, Typography } from "@mui/material";
 import OpenInNewIcon from "@mui/icons-material/OpenInNew";
 import { ArticleCardFace } from "./MyArticles";
-import Placeholder from "./article-images/placeholder.jpg"
+import Placeholder from "./article-images/placeholder.jpg";
 
 interface ArticleCardProps {
   cardInfo: ArticleCardFace;
 }
 
 const ArticleCard = ({ cardInfo }: ArticleCardProps) => {
-
   return (
     <>
       <Card
@@ -29,7 +28,9 @@ const ArticleCard = ({ cardInfo }: ArticleCardProps) => {
                 height: "75px",
                 backgroundColor: "lightgrey",
               }}
-            ><img id="image-container" src={Placeholder}/></Box>
+            >
+              <img id="image-container" src={Placeholder} />
+            </Box>
             <Box>
               <Box sx={{ display: "flex", flexDirection: "row" }}>
                 <Typography

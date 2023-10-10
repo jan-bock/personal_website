@@ -2,7 +2,7 @@ import { Box } from "@mui/material";
 import MyBackground from "./information-components/MyBackground";
 import MyExperiences from "./information-components/experience/MyExperiences";
 import MyProjects from "./information-components/projects/MyProjects";
-import MyArticles from "./information-components/articles/MyArticles";
+// import MyArticles from "./information-components/articles/MyArticles";
 
 const SecondaryColumn = () => {
   return (
@@ -16,9 +16,15 @@ const SecondaryColumn = () => {
       {/* <MyArticles /> */}
       {/* <Box sx={{ marginTop: "35px" }} /> */}
       <p className="column-end-info">
-        <b>Original design by <a className="brittany" href="https://brittanychiang.com/">Brittany Chiang</a>; all code is mine</b>. Developed
-        in Visual Studio Code; primarily built in React and Typescript. Tooling
-        includes Material UI; deployed using Vercel.
+        <b>
+          Original design by{" "}
+          <a className="brittany" href="https://brittanychiang.com/">
+            Brittany Chiang
+          </a>
+          ; all code is mine
+        </b>
+        . Developed in Visual Studio Code; primarily built in React and
+        Typescript. Tooling includes Material UI; deployed using Vercel.
       </p>
     </div>
   );

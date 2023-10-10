@@ -2,8 +2,8 @@ import { Box, Card, CardContent, Chip, Typography } from "@mui/material";
 import OpenInNewIcon from "@mui/icons-material/OpenInNew";
 import { ProjectCardFace } from "./MyProjects";
 import { ReactNode } from "react";
-import RuitHub from "./project-images/RuitHub.png"
-import DG from "./project-images/DonationGenie.png"
+import RuitHub from "./project-images/RuitHub.png";
+import DG from "./project-images/DonationGenie.png";
 
 interface ExperienceCardProps {
   cardInfo: ProjectCardFace;
@@ -25,8 +25,12 @@ const ProjectCard = ({ cardInfo }: ExperienceCardProps) => {
   };
 
   const returnImg = (): ReactNode => {
-    if (cardInfo.projectTitle === "RuitHub") return <img id="image-container" src={RuitHub}/>;
-    if (cardInfo.projectTitle === "Donation Genie") return <img id="image-container" src={DG}/>;
+    if (cardInfo.projectTitle === "RuitHub")
+      return (
+        <img id="image-container" alt="personal project card" src={RuitHub} />
+      );
+    if (cardInfo.projectTitle === "Donation Genie")
+      return <img id="image-container" alt="donation genie" src={DG} />;
   };
 
   return (
@@ -41,15 +45,19 @@ const ProjectCard = ({ cardInfo }: ExperienceCardProps) => {
       >
         <CardContent>
           <Box
-            sx={{ display: "flex", flexDirection: "row", columnGap: "25px", '@media screen and (max-width: 400px)': {columnGap: "20px"}}}
+            sx={{
+              display: "flex",
+              flexDirection: "row",
+              columnGap: "25px",
+              "@media screen and (max-width: 400px)": { columnGap: "20px" },
+            }}
           >
             <Box
               sx={{
                 borderRadius: "2px",
                 minWidth: "125px",
                 height: "75px",
-                '@media screen and (max-width: 400px)': {minWidth: "100px",
-              }
+                "@media screen and (max-width: 400px)": { minWidth: "100px" },
               }}
             >
               {returnImg()}

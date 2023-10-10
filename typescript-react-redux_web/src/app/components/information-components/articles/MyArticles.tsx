@@ -1,10 +1,10 @@
-import articles from "../../../json/articles.json"
+import articles from "../../../json/articles.json";
 import { Box } from "@mui/material";
 import ArticleCard from "./ArticleCard";
 
 export interface ArticleCardFace {
   articleTitle: string;
-  link: string,
+  link: string;
   description: string;
 }
 
@@ -20,7 +20,11 @@ const MyArticles = () => {
   };
 
   return (
-    <Box className="experience-container" id="ARTICLES" sx={{ paddingBottom: "50px" }}>
+    <Box
+      className="experience-container"
+      id="ARTICLES"
+      sx={{ paddingBottom: "50px" }}
+    >
       {renderArticleCards(articles)}
     </Box>
   );

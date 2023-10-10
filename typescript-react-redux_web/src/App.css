@@ -27,7 +27,7 @@ html {
 }
 
 #jan-bock {
-  font-family: 'Inter';
+  font-family: "Inter";
   letter-spacing: -2px;
   font-size: 45px;
   margin-top: 0px;
@@ -35,7 +35,7 @@ html {
 }
 
 #description {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-weight: 600;
   letter-spacing: -0.8px;
   font-size: 20px;
@@ -43,7 +43,7 @@ html {
 }
 
 .slogan-style {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-weight: 400;
   letter-spacing: -0.2px;
   font-size: 16px;
@@ -117,7 +117,7 @@ html {
 }
 
 .column-end-info {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-weight: 400;
   letter-spacing: -0.2px;
   font-size: 14px;
@@ -154,7 +154,7 @@ html {
 .navigation-li {
   list-style: none;
   padding-left: 20px;
-  font-family: 'Inter';
+  font-family: "Inter";
   font-weight: 600;
   letter-spacing: -0.2px;
   font-size: 12px;
@@ -173,7 +173,7 @@ html {
   border-radius: 4px;
 }
 
-@media (max-width:1350px) {
+@media (max-width: 1350px) {
   .experience-card {
     width: 45vw;
   }
@@ -184,7 +184,7 @@ html {
   }
 }
 
-@media (max-width:1000px) {
+@media (max-width: 1000px) {
   .columns {
     display: flex;
     flex-direction: column;
@@ -220,7 +220,7 @@ html {
   }
 
   .column-end-info {
-    font-family: 'Inter';
+    font-family: "Inter";
     width: 90vw;
     font-weight: 400;
     letter-spacing: -0.2px;
@@ -232,8 +232,7 @@ html {
   }
 }
 
-@media (max-width:800px) {
-
+@media (max-width: 800px) {
   .landing-page-container {
     width: 65vw;
     height: 100vh;
@@ -269,7 +268,7 @@ html {
   }
 
   .column-end-info {
-    font-family: 'Inter';
+    font-family: "Inter";
     width: 90vw;
     font-weight: 400;
     letter-spacing: -0.2px;
@@ -287,7 +286,7 @@ html {
   }
 }
 
-@media (max-width:300px) {
+@media (max-width: 300px) {
   .lp-column.secondary-column {
     padding: 0%;
     margin: auto;
@@ -301,7 +300,7 @@ html {
   }
 }
 
-@media (max-width:400px) {
+@media (max-width: 400px) {
   #image-container {
     width: 100px;
     height: auto;

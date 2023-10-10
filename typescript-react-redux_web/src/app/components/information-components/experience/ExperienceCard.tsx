@@ -12,7 +12,15 @@ const ExperienceCard = ({ cardInfo }: ExperienceCardProps) => {
       return (
         <>
           <Chip
-            sx={{ marginRight: "5px", marginBottom: "5px", ":hover": {backgroundColor: "black", color: "white", transitionDuration: "0.5s"} }}
+            sx={{
+              marginRight: "5px",
+              marginBottom: "5px",
+              ":hover": {
+                backgroundColor: "black",
+                color: "white",
+                transitionDuration: "0.5s",
+              },
+            }}
             key={entry}
             label={entry}
           />
@@ -25,10 +33,10 @@ const ExperienceCard = ({ cardInfo }: ExperienceCardProps) => {
     if (cardInfo.company.includes("Accenture"))
       window.open(
         "https://www.accenture.com/gb-en/services/technology/application-services",
-        "_blank"
+        "_blank",
       ) ||
         window.location.assign(
-          "https://www.accenture.com/gb-en/services/technology/application-services"
+          "https://www.accenture.com/gb-en/services/technology/application-services",
         );
     else if (cardInfo.company.includes("Collate"))
       window.open("https://www.collate.org/", "_blank") ||
@@ -64,8 +72,12 @@ const ExperienceCard = ({ cardInfo }: ExperienceCardProps) => {
                 fontWeight: 600,
                 fontSize: "12px",
                 paddingTop: "4px",
-                '@media screen and (max-width: 1000px)': {display: "flex", alignSelf: "flex-end", width: "max-content", minWidth: "0",
-              }
+                "@media screen and (max-width: 1000px)": {
+                  display: "flex",
+                  alignSelf: "flex-end",
+                  width: "max-content",
+                  minWidth: "0",
+                },
               }}
               color="text.secondary"
               key={cardInfo.fromDate + "-" + cardInfo.toDate}

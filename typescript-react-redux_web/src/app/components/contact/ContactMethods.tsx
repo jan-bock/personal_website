@@ -2,7 +2,7 @@ import { Box } from "@mui/material";
 import Email from "./contact-icons/email.png";
 import Linkedin from "./contact-icons/linkedin.png";
 import Github from "./contact-icons/github.png";
-import Medium from "./contact-icons/medium.png";
+// import Medium from "./contact-icons/medium.png";
 import Goodreads from "./contact-icons/goodreads.png";
 
 const ContactMethods = () => {
@@ -18,8 +18,13 @@ const ContactMethods = () => {
           window.location.assign("https://www.linkedin.com/in/j-bock/");
         break;
       case "goodreads":
-        window.open("https://www.goodreads.com/user/show/131021907-jan-bock", "_blank") ||
-          window.location.assign("https://www.goodreads.com/user/show/131021907-jan-bock");
+        window.open(
+          "https://www.goodreads.com/user/show/131021907-jan-bock",
+          "_blank",
+        ) ||
+          window.location.assign(
+            "https://www.goodreads.com/user/show/131021907-jan-bock",
+          );
         break;
       case "medium":
         // window.location.assign("");
@@ -31,8 +36,8 @@ const ContactMethods = () => {
           .writeText("j.g.bock@outlook.com")
           .then(() =>
             alert(
-              "Jan's email has been copied! If it hasn't, please see his CV for other contact details. Or reach out directly to: j.g.bock@outlook.com"
-            )
+              "Jan's email has been copied! If it hasn't, please see his CV for other contact details. Or reach out directly to: j.g.bock@outlook.com",
+            ),
           );
         break;
       default:
