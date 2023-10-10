@@ -66,7 +66,7 @@ html {
 }
 
 .bio {
-  width: 33vw;
+  width: 40vw;
   z-index: 1;
 }
 
@@ -173,6 +173,10 @@ html {
   border-radius: 4px;
 }
 
+.lp-column.secondary-column {
+  width: 38vw;
+}
+
 @media (max-width: 1350px) {
   .experience-card {
     width: 45vw;
@@ -229,6 +233,10 @@ html {
     padding-bottom: 55px;
     padding-left: 0;
     margin: auto;
+  }
+
+  .lp-column.secondary-column {
+    width: 90vw;
   }
 }
 
