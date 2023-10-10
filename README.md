@@ -8,4 +8,5 @@ The design of this application is based on Brittany Chiang's original personal w
 ## Contact
 Feel free to contact me at j.g.bock@outlook.com, or message me via Linkedin: https://www.linkedin.com/in/j-bock/
 
-## Screenshots (to come)
+## Link
+See the website [here](https://www.jan-bock.dev) or copy www.jan-bock.dev manually
