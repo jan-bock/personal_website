@@ -1,25 +1,19 @@
 [
   {
-    "fromDate": "MAR 2024",
+    "fromDate": "JULY 2024",
     "toDate": "PRESENT",
-    "roleTitle": "Full Stack/Cloud Engineer",
+    "roleTitle": "Full Stack Engineer",
     "company": "Large UK Supermarket - Accenture Client",
     "roleType": "Full Time",
-    "description": "TBD",
+    "description": "🕒 To be updated soon...",
     "skills": [
-      "React",
-      "TypeScript",
-      "TailwindCSS",
-      "AWS",
-      "Node.js",
-      "Snowflake",
-      "MongoDB"
+      "🚧 Work in progress! 🚧"
     ]
   },
   {
     "fromDate": "MAR 2024",
     "toDate": "JULY 2024",
-    "roleTitle": "Full Stack/Cloud Engineer",
+    "roleTitle": "Full Stack & Cloud Engineer",
     "company": "National Grid - Accenture Client",
     "roleType": "Full Time",
     "description": "Engineer in a dev team of 3 owning platform (Azure) and API development for a greenfield public sentiment platform (corporate venture). Developing public facing web apps using server side rendering technologies and Sanity CMS.",
