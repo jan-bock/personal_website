@@ -1,18 +1,61 @@
 [
   {
-    "fromDate": "FEB 2023",
+    "fromDate": "MAR 2024",
     "toDate": "PRESENT",
-    "roleTitle": "Frontend Engineer",
-    "company": "Accenture (Global Automotive)",
+    "roleTitle": "Full Stack/Cloud Engineer",
+    "company": "Large UK Supermarket - Accenture Client",
     "roleType": "Full Time",
-    "description": "Core frontend developer in an agile tech team, migrating the frontend of old frameworks to modern tech for a global German automotive company. Developing internal tools and reporting systems to generate KPIs and manage global production cycles using key manufacturing data.",
-    "skills": ["React", "TypeScript", "MUI", "Jenkins", "Node.js", "JSON"]
+    "description": "TBD",
+    "skills": [
+      "React",
+      "TypeScript",
+      "TailwindCSS",
+      "AWS",
+      "Node.js",
+      "Snowflake",
+      "MongoDB"
+    ]
+  },
+  {
+    "fromDate": "MAR 2024",
+    "toDate": "JULY 2024",
+    "roleTitle": "Full Stack/Cloud Engineer",
+    "company": "National Grid - Accenture Client",
+    "roleType": "Full Time",
+    "description": "Engineer in a dev team of 3 owning platform (Azure) and API development for a greenfield public sentiment platform (corporate venture). Developing public facing web apps using server side rendering technologies and Sanity CMS.",
+    "skills": [
+      "NextJs",
+      "TypeScript",
+      "Tailwind",
+      "Azure",
+      "Node.js",
+      "ExpressJs",
+      "SanityCMS",
+      "API Design"
+    ]
+  },
+  {
+    "fromDate": "FEB 2023",
+    "toDate": "MAR 2024",
+    "roleTitle": "Frontend Engineer",
+    "company": "Mercedes Benz - Accenture Client",
+    "roleType": "Full Time",
+    "description": "Senior frontend developer in an agile tech team, migrating the frontend of old frameworks to modern tech for a global German automotive company. Developing internal tools and reporting systems to generate KPIs and manage global production cycles using key manufacturing data.",
+    "skills": [
+      "React",
+      "TypeScript",
+      "MUI",
+      "Jenkins",
+      "Node.js",
+      "JSON",
+      "PostgreSQL"
+    ]
   },
   {
     "fromDate": "JUNE 2022",
     "toDate": "FEB 2023",
     "roleTitle": "Full Stack Engineer",
-    "company": "Accenture (Big Government)",
+    "company": "Big Government - Accenture Client",
     "roleType": "Full Time",
     "description": "Delivered payments north of £1.6 billion to UK citizens in need, during Covid, and the Cost of Living Crisis. Operated across the stack delivering features as a junior developer, having opportunities to lead production runs and deployments.",
     "skills": [
@@ -22,7 +65,8 @@
       "UI/UX",
       "Node.js",
       "Java",
-      "Sprint(Boot)"
+      "Sprint(Boot)",
+      "Relational DBs"
     ]
   },
   {
@@ -47,30 +91,13 @@
     "toDate": "JAN 2022",
     "roleTitle": "Product Manager",
     "company": "Collate (Early Stage Startup)",
-    "roleType": "Internship",
+    "roleType": "Early Career Internship",
     "description": "Collaborated directly alongside Collate's founder in an operations, project-, and and product management oriented role, in a very early stage startup based in London. Heavy focus on business requirements analysis and other BA oriented activities.",
     "skills": [
       "Product Sense",
       "API Integration",
       "Startup Operations",
       "Project/Product Management"
-    ]
-  },
-  {
-    "fromDate": "2018",
-    "toDate": "2021",
-    "roleTitle": "Physical Geography B.Sc",
-    "company": "Durham University",
-    "roleType": "Student",
-    "description": "Completed a Bachelor of Science in Physical Geography with a heavy focus on Geographic Information Systems, at Durham University. Achieved a 1st overall, with a 1st in my Dissertation, covering landslide susceptibility prediction modelling.",
-    "skills": [
-      "R",
-      "Statistical Programming",
-      "Python",
-      "ML",
-      "GIS",
-      "Information Systems",
-      "Big Data"
     ]
   }
 ]

@@ -2,6 +2,7 @@ import { Box } from "@mui/material";
 import MyBackground from "./information-components/MyBackground";
 import MyExperiences from "./information-components/experience/MyExperiences";
 import MyProjects from "./information-components/projects/MyProjects";
+import MyArticles from "./information-components/articles/MyArticles";
 // import MyArticles from "./information-components/articles/MyArticles";
 
 const SecondaryColumn = () => {
@@ -13,7 +14,7 @@ const SecondaryColumn = () => {
       <Box sx={{ marginTop: "35px" }} />
       <MyProjects />
       <Box sx={{ marginTop: "35px" }} />
-      {/* <MyArticles /> */}
+      <MyArticles />
       {/* <Box sx={{ marginTop: "35px" }} /> */}
       <p className="column-end-info">
         <b>

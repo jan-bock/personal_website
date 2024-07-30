@@ -30,7 +30,10 @@ const ExperienceCard = ({ cardInfo }: ExperienceCardProps) => {
   };
 
   const onExperienceClick = (cardInfo: ExperienceCardFace) => {
-    if (cardInfo.company.includes("Accenture"))
+    if (cardInfo.company.includes("National Grid"))
+      window.open("https://uplift.nationalgrid.com/", "_blank") ||
+        window.location.assign("https://uplift.nationalgrid.com/");
+    else if (cardInfo.company.includes("Accenture"))
       window.open(
         "https://www.accenture.com/gb-en/services/technology/application-services",
         "_blank",
@@ -44,6 +47,7 @@ const ExperienceCard = ({ cardInfo }: ExperienceCardProps) => {
     else if (cardInfo.company.includes("Durham"))
       window.open("https://www.durham.ac.uk/", "_blank") ||
         window.location.assign("https://www.durham.ac.uk/");
+
   };
 
   return (
