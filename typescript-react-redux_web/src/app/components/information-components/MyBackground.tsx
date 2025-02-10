@@ -10,9 +10,17 @@ const MyBackground = () => {
         sx={{ width: 56, height: 56, marginLeft: "15px", marginRight: "15px" }}
       />
       <div className="lp-column bio slogan-style" id="ABOUT">
-        <b>Welcome!</b> I'm <b>Jan Bock</b>, a <b>Full Stack Engineer based in London</b>. <br></br><br></br>
-        With expertise in JavaScript and Cloud Engineering, I bring innovative solutions to various industries, having worked in the Automotive, Manufacturing, Energy, and Public Sector, and Retail industries. <br></br><br></br>
-        I thrive in dynamic, agile environments and love collaborating with modern engineering teams to create impactful, scalable modern applications. My journey is driven by continuous learning and a commitment to delivering top-tier tech solutions. Explore my work and projects, and if you have an interesting project or product idea, shoot me a message!
+        Welcome! I'm <b>Jan Bock</b>, a Full Stack Engineer based in London.{" "}
+        <br></br>
+        <br></br>I build scalable, high-performance web applications using
+        modern full-stack technologies, creating impactful digital experiences
+        that drive innovation. <br></br>
+        <br></br>I thrive in dynamic, agile environments and love collaborating
+        with modern engineering teams to create state-of-the-art, trailblazing
+        products for my clients and users.<br></br>
+        <br></br>My journey is driven by continuous learning and a commitment to
+        delivering top-tier tech solutions. Explore my work and projects, and if
+        you have an interesting project, don't hesistate to shoot over an email!
       </div>
     </Box>
   );

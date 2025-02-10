@@ -24,8 +24,8 @@ const SecondaryColumn = () => {
           </a>
           ; all code is mine
         </b>
-        . Developed in Visual Studio Code; primarily built in React and
-        Typescript. Tooling includes Material UI; deployed using Vercel.
+        . Developed in Visual Studio Code; built using React,
+        Typescript, Material UI; deployed using <b>Vercel</b>.
       </p>
     </div>
   );
