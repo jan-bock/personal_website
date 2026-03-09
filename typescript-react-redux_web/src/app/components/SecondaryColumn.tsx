@@ -1,4 +1,4 @@
-import { Box } from "@mui/material";
+
 import MyBackground from "./information-components/MyBackground";
 import MyExperiences from "./information-components/experience/MyExperiences";
 import MyProjects from "./information-components/projects/MyProjects";
