@@ -9,10 +9,10 @@ const MyBackground = () => {
         src={janBock}
         sx={{ width: 56, height: 56, marginLeft: "15px", marginRight: "15px" }}
       />
-      <div className="lp-column bio slogan-style" id="ABOUT">
-        <b>Welcome!</b> I'm <b>Jan Bock</b>, a <b>Full Stack Engineer based in London</b>. <br></br><br></br>
-        With expertise in JavaScript and Cloud Engineering, I bring innovative solutions to various industries, having worked in the Automotive, Manufacturing, Energy, and Public Sector, and Retail industries. <br></br><br></br>
-        I thrive in dynamic, agile environments and love collaborating with modern engineering teams to create impactful, scalable modern applications. My journey is driven by continuous learning and a commitment to delivering top-tier tech solutions. Explore my work and projects, and if you have an interesting project or product idea, shoot me a message!
+      <div className="lp-column bio slogan-style" id="ABOUT" style={{ paddingBottom: "120px" }}>
+        <b>Welcome!</b> I'm <b>Jan Bock</b>, a <b>Product Engineer based in London</b>. <br></br><br></br>
+        I specialise in building high-performance, accessible TypeScript and React applications within cloud-native architectures. Currently at Skyscanner, I own components used by millions of travellers and run experiments that directly impact conversion and revenue. <br></br><br></br>
+        Previously at Accenture, I led teams and delivered production systems across Retail, Energy, Automotive, and Public Sector. Explore my work and projects below, and feel free to get in touch.
       </div>
     </Box>
   );

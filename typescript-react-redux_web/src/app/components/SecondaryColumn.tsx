@@ -9,11 +9,8 @@ const SecondaryColumn = () => {
   return (
     <div className="lp-column secondary-column">
       <MyBackground />
-      <Box sx={{ marginTop: "125px" }} />
       <MyExperiences />
-      <Box sx={{ marginTop: "35px" }} />
       <MyProjects />
-      <Box sx={{ marginTop: "35px" }} />
       <MyArticles />
       {/* <Box sx={{ marginTop: "35px" }} /> */}
       <p className="column-end-info">

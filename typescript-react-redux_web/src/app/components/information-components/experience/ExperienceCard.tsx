@@ -1,6 +1,8 @@
 import { Box, Card, CardContent, Chip, Typography } from "@mui/material";
 import { ExperienceCardFace } from "./MyExperiences";
 import OpenInNewIcon from "@mui/icons-material/OpenInNew";
+import skyscannerLogo from "../../bio-images/skyscanner-logo.ico";
+import accentureLogo from "../../bio-images/ACN-cce5b411.png";
 
 interface ExperienceCardProps {
   cardInfo: ExperienceCardFace;
@@ -29,11 +31,24 @@ const ExperienceCard = ({ cardInfo }: ExperienceCardProps) => {
     });
   };
 
+  const hasLink = (cardInfo: ExperienceCardFace) =>
+    cardInfo.company.includes("Skyscanner") ||
+    cardInfo.company.includes("Sainsbury") ||
+    cardInfo.company.includes("National Grid") ||
+    (cardInfo.company.includes("Accenture") && !cardInfo.company.includes("Internal")) ||
+    cardInfo.company.includes("Durham");
+
   const onExperienceClick = (cardInfo: ExperienceCardFace) => {
-    if (cardInfo.company.includes("National Grid"))
+    if (cardInfo.company.includes("Skyscanner"))
+      window.open("https://www.skyscanner.net/", "_blank") ||
+        window.location.assign("https://www.skyscanner.net/");
+    else if (cardInfo.company.includes("Sainsbury"))
+      window.open("https://www.sainsburys.co.uk/", "_blank") ||
+        window.location.assign("https://www.sainsburys.co.uk/");
+    else if (cardInfo.company.includes("National Grid"))
       window.open("https://uplift.nationalgrid.com/", "_blank") ||
         window.location.assign("https://uplift.nationalgrid.com/");
-    else if (cardInfo.company.includes("Accenture"))
+    else if (cardInfo.company.includes("Accenture") && !cardInfo.company.includes("Internal"))
       window.open(
         "https://www.accenture.com/gb-en/services/technology/application-services",
         "_blank",
@@ -41,9 +56,6 @@ const ExperienceCard = ({ cardInfo }: ExperienceCardProps) => {
         window.location.assign(
           "https://www.accenture.com/gb-en/services/technology/application-services",
         );
-    else if (cardInfo.company.includes("Collate"))
-      window.open("https://www.collate.org/", "_blank") ||
-        window.location.assign("https://www.collate.org/");
     else if (cardInfo.company.includes("Durham"))
       window.open("https://www.durham.ac.uk/", "_blank") ||
         window.location.assign("https://www.durham.ac.uk/");
@@ -57,7 +69,21 @@ const ExperienceCard = ({ cardInfo }: ExperienceCardProps) => {
         key={cardInfo.fromDate + "-" + cardInfo.toDate}
         onClick={() => onExperienceClick(cardInfo)}
       >
-        <CardContent>
+        <CardContent sx={{ position: "relative" }}>
+          {cardInfo.company.includes("Skyscanner") && (
+            <img
+              src={skyscannerLogo}
+              alt="Skyscanner"
+              style={{ position: "absolute", top: "16px", right: "16px", width: "40px", height: "40px" }}
+            />
+          )}
+          {cardInfo.company.includes("Accenture") && (
+            <img
+              src={accentureLogo}
+              alt="Accenture"
+              style={{ position: "absolute", top: "16px", right: "16px", width: "40px", height: "40px" }}
+            />
+          )}
           <Box
             sx={{
               display: "flex",
@@ -103,9 +129,11 @@ const ExperienceCard = ({ cardInfo }: ExperienceCardProps) => {
                   <div>{cardInfo.roleTitle}</div>
                   <div>{cardInfo.company}</div>
                 </Typography>
-                <Box>
-                  <OpenInNewIcon sx={{ paddingLeft: "5px", width: "15px" }} />
-                </Box>
+                {hasLink(cardInfo) && (
+                  <Box>
+                    <OpenInNewIcon sx={{ paddingLeft: "5px", width: "15px" }} />
+                  </Box>
+                )}
               </Box>
               <Typography
                 sx={{ mb: 1.5, marginTop: "-10px" }}

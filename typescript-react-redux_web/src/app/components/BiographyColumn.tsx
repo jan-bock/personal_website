@@ -8,7 +8,7 @@ const BiographyColumn = () => {
       <div id="bio-container" className="lp-column">
         <h1 id="jan-bock">Jan Bock</h1>
         <Box sx={{ display: "flex", flexDirection: "row", columnGap: "15px" }}>
-          <h3 id="description">Full Stack Engineer <br></br>Accenture Next Gen Engineering</h3>
+          <h3 id="description">Product Engineer <br></br>Skyscanner</h3>
         </Box>
         <h5 className="slogan-style" id="opaque">
           Creating seamless user experiences with <br></br>modern engineering

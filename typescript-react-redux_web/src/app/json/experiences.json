@@ -1,13 +1,34 @@
 [
   {
-    "fromDate": "JULY 2024",
+    "fromDate": "NOV 2025",
     "toDate": "PRESENT",
-    "roleTitle": "Full Stack Engineer",
-    "company": "Large UK Supermarket - Accenture Client",
+    "roleTitle": "Frontend Engineer",
+    "company": "Skyscanner",
     "roleType": "Full Time",
-    "description": "🕒 To be updated soon...",
+    "description": "Product engineer owning Flights Search Controls and Pricing components used by millions of travellers per month. Running A/B experiments to optimise conversion and revenue, building performative and accessible interfaces with a focus on Core Web Vitals.",
     "skills": [
-      "🚧 Work in progress! 🚧"
+      "React",
+      "TypeScript",
+      "A/B Testing",
+      "Core Web Vitals",
+      "Accessibility",
+      "Product Experimentation"
+    ]
+  },
+  {
+    "fromDate": "JULY 2024",
+    "toDate": "OCT 2025",
+    "roleTitle": "Full Stack Engineer (Team Lead)",
+    "company": "Sainsbury's - Accenture Client",
+    "roleType": "Full Time",
+    "description": "Led a cross-functional team of 6 engineers to architect and launch a retail media advertising platform. Owned full stack and cloud-native feature development across complex modules, collaborating closely with product, design, and end users.",
+    "skills": [
+      "React",
+      "TypeScript",
+      "GraphQL",
+      "Node.js",
+      "AWS",
+      "Event-Driven Architecture"
     ]
   },
   {
