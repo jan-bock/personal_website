@@ -18,9 +18,9 @@ const ExperienceCard = ({ cardInfo }: ExperienceCardProps) => {
               marginRight: "5px",
               marginBottom: "5px",
               ":hover": {
-                backgroundColor: "black",
+                backgroundColor: "#0770e3",
                 color: "white",
-                transitionDuration: "0.5s",
+                transitionDuration: "0.3s",
               },
             }}
             key={entry}

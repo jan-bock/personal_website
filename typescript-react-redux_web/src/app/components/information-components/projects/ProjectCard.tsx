@@ -1,8 +1,6 @@
 import { Box, Card, CardContent, Chip, Typography } from "@mui/material";
 import OpenInNewIcon from "@mui/icons-material/OpenInNew";
 import { ProjectCardFace } from "./MyProjects";
-import { ReactNode } from "react";
-import RuitHub from "./project-images/RuitHub.png";
 import DG from "./project-images/DonationGenie.png";
 
 interface ExperienceCardProps {
@@ -24,13 +22,10 @@ const ProjectCard = ({ cardInfo }: ExperienceCardProps) => {
     });
   };
 
-  const returnImg = (): ReactNode => {
-    if (cardInfo.projectTitle === "RuitHub")
-      return (
-        <img id="image-container" alt="personal project card" src={RuitHub} />
-      );
+  const returnImg = () => {
     if (cardInfo.projectTitle === "Donation Genie")
-      return <img id="image-container" alt="donation genie" src={DG} />;
+      return <img id="image-container" alt="Donation Genie" src={DG} />;
+    return null;
   };
 
   return (

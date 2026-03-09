@@ -11,8 +11,7 @@ const BiographyColumn = () => {
           <h3 id="description">Product Engineer <br></br>Skyscanner</h3>
         </Box>
         <h5 className="slogan-style" id="opaque">
-          Creating seamless user experiences with <br></br>modern engineering
-          techniques
+          Building interfaces that millions of people <br></br>use every day
         </h5>
         <NavigationContainer />
         <ContactMethods />

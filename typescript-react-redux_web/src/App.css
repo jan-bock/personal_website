@@ -73,21 +73,23 @@ html {
 .experience-card {
   min-width: 275px;
   width: 40vw;
-  margin-bottom: 15px;
-  border: none;
+  margin-bottom: 10px;
+  border: 1px solid transparent;
   box-shadow: none !important;
+  border-radius: 12px !important;
+  transition: all 0.3s ease;
 }
 
 .experience-card:hover {
-  transition: 0.3s;
-  background-color: rgba(128, 128, 128, 0.033);
+  background-color: rgba(7, 112, 227, 0.03);
+  border-color: rgba(7, 112, 227, 0.1);
   cursor: pointer;
 }
 
 .experience-card:hover .experience-card-role {
   transition: 0.3s;
   font-weight: 700;
-  color: #9000e3;
+  color: #0770e3;
 }
 
 .experience-container:hover .experience-card {
@@ -106,6 +108,18 @@ html {
   width: 38vw;
 }
 
+.section-header {
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.4);
+  margin-bottom: 8px;
+  margin-top: 16px;
+  padding-left: 16px;
+}
+
 .contact-icons {
   width: 30px;
   height: 30px;
@@ -120,15 +134,24 @@ html {
   font-family: "Inter";
   font-weight: 400;
   letter-spacing: -0.2px;
-  font-size: 14px;
-  line-height: 25px;
+  font-size: 12px;
+  line-height: 22px;
   padding-bottom: 55px;
+  padding-top: 20px;
   margin: auto;
   width: 42vw;
+  color: rgba(0, 0, 0, 0.35);
 }
 
 .brittany {
-  color: black;
+  color: rgba(0, 0, 0, 0.5);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.brittany:hover {
+  color: #0770e3;
+  transition: color 0.3s;
 }
 
 .navigation-el {
